@@ -5,6 +5,10 @@ import sys
 from threading import Thread
 import time
 
+OP_TRANSACTION = 3
+OP_BLOCKCHAIN = 4
+OP_VALIDATED = 5
+
 # Cree un packet de donnee a partir des deux valeurs entieres v1 et v2 passees
 # en parametre. C'est la serialisation et ce sera l'objet de cour 4.
 def CreatePacket(op_code, data):
